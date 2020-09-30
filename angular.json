@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "observe1": {
+    "naveensai": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/observe1",
+            "outputPath": "dist/naveensai",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "observe1:build"
+            "browserTarget": "naveensai:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "observe1:build:production"
+              "browserTarget": "naveensai:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "observe1:build"
+            "browserTarget": "naveensai:build"
           }
         },
         "test": {
@@ -114,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "observe1:serve"
+            "devServerTarget": "naveensai:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "observe1:serve:production"
+              "devServerTarget": "naveensai:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "observe1",
+  "defaultProject": "naveensai",
   "cli": {
-    "analytics": "8c935f98-2321-497a-a1fb-bc036d890a6f"
+    "analytics": "a234c54e-705e-4a80-99cf-5e4bf00a627a"
   }
 }
