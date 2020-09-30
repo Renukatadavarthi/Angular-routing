@@ -1,5 +1,5 @@
 {
-  "name": "router1",
+  "name": "root",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
