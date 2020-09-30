@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "usecase1": {
+    "ticketbooking1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/usecase1",
+            "outputPath": "dist/ticketbooking1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "usecase1:build"
+            "browserTarget": "ticketbooking1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "usecase1:build:production"
+              "browserTarget": "ticketbooking1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "usecase1:build"
+            "browserTarget": "ticketbooking1:build"
           }
         },
         "test": {
@@ -114,15 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "usecase1:serve"
+            "devServerTarget": "ticketbooking1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "usecase1:serve:production"
+              "devServerTarget": "ticketbooking1:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "usecase1"
+    }
+  },
+  "defaultProject": "ticketbooking1",
+  "cli": {
+    "analytics": "d1630cf6-c1c6-4544-af46-da2db285b8ee"
+  }
 }
