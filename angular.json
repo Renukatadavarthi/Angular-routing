@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "renu": {
+    "reactivexjs": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/renu",
+            "outputPath": "dist/reactivexjs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "renu:build"
+            "browserTarget": "reactivexjs:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "renu:build:production"
+              "browserTarget": "reactivexjs:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "renu:build"
+            "browserTarget": "reactivexjs:build"
           }
         },
         "test": {
@@ -114,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "renu:serve"
+            "devServerTarget": "reactivexjs:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "renu:serve:production"
+              "devServerTarget": "reactivexjs:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "renu",
+  "defaultProject": "reactivexjs",
   "cli": {
-    "analytics": "ebc123e2-2749-4388-865e-f13c0cee1247"
+    "analytics": "a91f0f67-f002-4a1b-840c-4a9ddde51849"
   }
 }
