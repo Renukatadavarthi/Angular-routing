@@ -1,26 +1,19 @@
-
-    
-
 {
-"details": [
+  "posts": [
     {
-"id": 1,
-"username": "pavan",
-"password":"pavan",
-"role": "student"
-    },
-    {
-"id": 2,
-"username": "laxmi",
-"password":"laxmi",
-"role": "admin"
-    },
-    {
-"id": 1,
-"username": "rrr",
-"password":"hhh",
-"role": "student"
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
-  ]
-} 
-
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

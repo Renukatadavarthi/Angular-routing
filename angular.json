@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "priya": {
+    "pipe1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/priya",
+            "outputPath": "dist/pipe1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "priya:build"
+            "browserTarget": "pipe1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "priya:build:production"
+              "browserTarget": "pipe1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "priya:build"
+            "browserTarget": "pipe1:build"
           }
         },
         "test": {
@@ -114,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "priya:serve"
+            "devServerTarget": "pipe1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "priya:serve:production"
+              "devServerTarget": "pipe1:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "priya",
+  "defaultProject": "pipe1",
   "cli": {
-    "analytics": "5173d399-a46d-4514-b902-bbd900ff9876"
+    "analytics": "a88f95e0-2cc4-4345-a533-77c37b2fb641"
   }
 }
