@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EmpInfo": {
+    "delivery2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/EmpInfo",
+            "outputPath": "dist/delivery2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,12 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              ../C:/Angular/EmpInfo/node_modules/bootstrap/dist/css/bootstrap.min.css,
               "src/styles.scss"
             ],
-            "scripts": [
-              ./C:/Angular/EmpInfo/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -69,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "EmpInfo:build"
+            "browserTarget": "delivery2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "EmpInfo:build:production"
+              "browserTarget": "delivery2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "EmpInfo:build"
+            "browserTarget": "delivery2:build"
           }
         },
         "test": {
@@ -95,7 +92,6 @@
               "src/assets"
             ],
             "styles": [
-              
               "src/styles.scss"
             ],
             "scripts": []
@@ -118,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "EmpInfo:serve"
+            "devServerTarget": "delivery2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "EmpInfo:serve:production"
+              "devServerTarget": "delivery2:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "EmpInfo",
+  "defaultProject": "delivery2",
   "cli": {
-    "analytics": "68ddbe1c-6f9d-4c3b-aea8-8f723b24867d"
+    "analytics": "370532f8-4467-4f0f-8d58-e354f0f60021"
   }
 }
