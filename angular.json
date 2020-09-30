@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "delivery2": {
+    "curdoperations1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/delivery2",
+            "outputPath": "dist/curdoperations1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "delivery2:build"
+            "browserTarget": "curdoperations1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "delivery2:build:production"
+              "browserTarget": "curdoperations1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "delivery2:build"
+            "browserTarget": "curdoperations1:build"
           }
         },
         "test": {
@@ -114,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "delivery2:serve"
+            "devServerTarget": "curdoperations1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "delivery2:serve:production"
+              "devServerTarget": "curdoperations1:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "delivery2",
+  "defaultProject": "curdoperations1",
   "cli": {
-    "analytics": "370532f8-4467-4f0f-8d58-e354f0f60021"
+    "analytics": "e044e220-77a9-4d50-bf2f-87e2ba4938ff"
   }
 }
