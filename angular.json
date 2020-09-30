@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ticketbooking1": {
+    "template2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ticketbooking1",
+            "outputPath": "dist/template2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ticketbooking1:build"
+            "browserTarget": "template2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ticketbooking1:build:production"
+              "browserTarget": "template2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ticketbooking1:build"
+            "browserTarget": "template2:build"
           }
         },
         "test": {
@@ -114,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ticketbooking1:serve"
+            "devServerTarget": "template2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ticketbooking1:serve:production"
+              "devServerTarget": "template2:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "ticketbooking1",
+  "defaultProject": "template2",
   "cli": {
-    "analytics": "d1630cf6-c1c6-4544-af46-da2db285b8ee"
+    "analytics": "e3ad03cc-2585-47e5-9204-ecd24e8beff0"
   }
 }
